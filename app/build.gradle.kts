@@ -4,6 +4,9 @@ plugins {
     // DAGGER-HILT
     id("kotlin-kapt")
     alias(libs.plugins.dagger.hilt)
+    // SERIALIZATION
+    alias(libs.plugins.jetbrains.kotlin.serialization)
+    id("kotlin-parcelize") // needed for non-primitive classes
 }
 
 android {
@@ -104,6 +107,7 @@ dependencies {
 
     // COMPOSE-NAVIGATION
     implementation(libs.compose.navigation)
+    implementation(libs.kotlinx.serialization.json)
 
     // CONSTRAINT-LAYOUT
     implementation(libs.compose.constraint)

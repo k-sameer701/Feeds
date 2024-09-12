@@ -4,4 +4,6 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     // DAGGER-HILT
     alias(libs.plugins.dagger.hilt) apply false
+    // SERIALIZATION
+    alias(libs.plugins.jetbrains.kotlin.serialization) apply false
 }

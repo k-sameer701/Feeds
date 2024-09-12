@@ -22,7 +22,9 @@ hilt-compose = "1.2.0"
 # COIL
 coil = "2.6.0"
 # COMPOSE-NAVIGATION
-compose-navigation = "2.7.7"
+compose-navigation = "2.8.0"
+kotlinxSerializationJson = "1.7.1"
+kotlinxSerialization = "1.9.0"
 # CONSTRAINT-LAYOUT
 compose-constraint = "1.0.1"
 # ROOM-VERSION
@@ -63,6 +65,7 @@ firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "fireb
 coil = { module = "io.coil-kt:coil-compose", version.ref = "coil"}
 # COMPOSE NAVIGATION
 compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "compose-navigation"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 # CONSTRAINT-LAYOUT
 compose-constraint = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "compose-constraint"}
 # ROOM
@@ -74,4 +77,7 @@ room-ktx = { module = "androidx.room:room-ktx", version.ref = "room-version" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# DAGGER-HILT
 dagger-hilt = {id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt"}
+# SERIALIZATION
+jetbrains-kotlin-serialization = { id ="org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinxSerialization"}
