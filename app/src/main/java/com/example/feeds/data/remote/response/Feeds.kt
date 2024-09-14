@@ -1,6 +1,6 @@
 package com.example.feeds.data.remote.response
 
-import com.example.feeds.data.local.model.NewsFeeds
+import com.example.feeds.data.local.entity.NewsFeeds
 
 data class Feeds(
     val available: Int,

@@ -1,12 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+//    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.org.jetbrains.kotlin.android)
     // DAGGER-HILT
     id("kotlin-kapt")
     alias(libs.plugins.dagger.hilt)
-    // SERIALIZATION
+    // COMPOSE-NAVIGATION
     alias(libs.plugins.jetbrains.kotlin.serialization)
-    id("kotlin-parcelize") // needed for non-primitive classes
+    id("kotlin-parcelize") // needed only for non-primitive classes
+
+    // COMPOSE-COMPILER
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -106,7 +110,7 @@ dependencies {
     implementation(libs.coil)
 
     // COMPOSE-NAVIGATION
-    implementation(libs.compose.navigation)
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
 
     // CONSTRAINT-LAYOUT
